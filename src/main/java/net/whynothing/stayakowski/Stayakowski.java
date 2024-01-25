@@ -26,7 +26,7 @@ public class Stayakowski implements ModInitializer {
                                     return 1;
                                 })))));
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) ->
-                dispatcher.register(literal("stayakovskiy")
+                dispatcher.register(literal("stayakowski")
                         .executes(context -> {
                             context.getSource().sendFeedback(() -> Text.literal("Стояковский а что это вы сидите на шкибиди туалете? \n" +
                                     "А будет лучше если я на вас насру?\n" +
