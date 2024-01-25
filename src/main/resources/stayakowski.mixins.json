@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.whynothing.stayakowski.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"StayakowskiMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

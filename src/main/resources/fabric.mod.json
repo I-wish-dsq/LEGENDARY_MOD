@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "stayakowski",
+	"version": "${version}",
+	"name": "Stayakowski Mod",
+	"description": "Provides you to see a beautiful story about famous person - stayakowski",
+	"authors": [
+		"whynothing"
+	],
+	"contact": {
+		"homepage": "https://github.com/I-wish-dsq",
+		"sources": "https://www.meme-arsenal.com/memes/b45cf9184a1c0eac79268cf719241e2f.jpg"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stayakowski/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.whynothing.stayakowski.Stayakowski"
+		],
+		"client": [
+			"net.whynothing.stayakowski.StayakowskiClient"
+		]
+	},
+	"mixins": [
+		"stayakowski.mixins.json",
+		{
+			"config": "stayakowski.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
